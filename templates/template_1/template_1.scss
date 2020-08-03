@@ -2,7 +2,6 @@
     width:930px;
     height:auto;
     box-sizing: border-box;
-    border:1px solid blue;
     padding:15px;
     position:absolute;
     left:-2000px;
@@ -31,6 +30,14 @@
             }
 
             .infoCon{
+                display:flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                div{
+                    width:100%;
+                }
+                
                 .name{
                     font-size:17px;
                     font-family:montserrat-semibold;

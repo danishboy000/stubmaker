@@ -9,7 +9,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+        <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+        </Head>
         <body>
           <Main />
           <NextScript />
