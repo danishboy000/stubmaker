@@ -10,6 +10,7 @@ export default function index() {
     const [preview,setPreview] = useState(false);
     const [data,setData] = useState(Data);
     const [checkout,setCheckout] = useState(false);
+    const [load,setLoad] = useState(false);
 
     useEffect(()=>{
         generateStub();
@@ -32,10 +33,14 @@ export default function index() {
 
 
     const generateStub = () => {
+        if(load)
+            return;
+        setLoad(true);
         document.getElementById('template_1').style.display = 'block';
         html2canvas(document.querySelector('#template_1')).then(function(canvas) {
             const imgData = canvas.toDataURL('image/png');
             document.getElementById('previewImage').src = imgData;
+            setLoad(false);
       })
        
     }
