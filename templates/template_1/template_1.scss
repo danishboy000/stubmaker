@@ -1,0 +1,164 @@
+.template1{
+    width:930px;
+    height:auto;
+    box-sizing: border-box;
+    border:1px solid blue;
+    padding:15px;
+    position:absolute;
+    left:-2000px;
+
+    .head{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        height:80px;
+
+        .company{
+            width:50%;
+            display:flex;
+            height:100%;
+
+            .logo{
+                display:flex;
+                align-items: center;
+                box-sizing: border-box;
+                padding:10px;
+
+                img{
+                    max-width:70px;
+                    max-height:70px;
+                }
+            }
+
+            .infoCon{
+                .name{
+                    font-size:17px;
+                    font-family:montserrat-semibold;
+                    color:black;
+                }
+
+                .address{
+                    font-size:15px;
+                    font-family:montserrat-medium;
+                    color:black;
+                }
+
+                .phone{
+                    font-size:15px;
+                    font-family:montserrat-medium;
+                    color:black;
+                }
+                .ssn{
+                    font-size:15px;
+                    font-family:montserrat-medium;
+                    color:black;
+                }
+            }
+        }
+
+        .heading{
+            width:50%;
+            color:#1d4087;
+            font-size:18px;
+            font-family:montserrat-semibold;
+            text-align:right;
+            
+        }
+    }
+
+    .employee{
+        font-size:15px;
+        text-align:center;
+        margin-top:10px;
+
+        .headings{
+            display:flex;
+            font-family: montserrat-medium;
+            background-color: #1d4087;
+            color:white;
+            padding:10px;
+
+            div{
+                flex:1 0;
+            }
+        }
+
+        .values{
+            display:flex;
+            font-family: montserrat-medium;
+            color:black;
+            padding:10px;
+
+            div{
+                flex:1 0;
+            }
+        }
+    }
+
+    .salary{
+        font-size:15px;
+        text-align:center;
+        margin-top:10px;
+        
+        .headings{
+            display:flex;
+            font-family: montserrat-medium;
+            background-color: #1d4087;
+            color:white;
+            padding:10px;
+
+            div{
+                flex:1 0;
+            }
+        }
+
+        .values{
+            display:flex;
+            font-family: montserrat-medium;
+            color:black;
+            padding:10px;
+            min-height:175px;
+
+            div{
+                flex:1 0;
+            }
+        }
+    }
+
+    .result{
+        font-size:15px;
+        text-align:center;
+        margin-top:10px;
+        
+        .headings{
+            display:flex;
+            font-family: montserrat-medium;
+            background-color: #1d4087;
+            color:white;
+            padding:10px;
+
+            div{
+                flex:1 0;
+            }
+
+        }
+
+        .values{
+            display:flex;
+            font-family: montserrat-medium;
+            color:black;
+            padding:10px;
+
+            div{
+                flex:1 0;
+            }
+        }
+    }
+
+    .waterMark{
+        position:absolute;
+        left:0px;
+        top:-100px;
+        width:100%;
+    }
+}

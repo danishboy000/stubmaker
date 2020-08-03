@@ -1,0 +1,20 @@
+{
+    "templateType":"template_1",
+    "company_name":"StubMaker.inc",
+    "company_address":"411 Karim Block Allama iqbal town",
+    "company_city":"Lahore",
+    "company_phoneNumber":"+92 321 498499",
+    "company_logo":"/logo/logo.jpeg",
+    "company_ssn":"123456",
+    "employee_name":"John Doe",
+    "employee_state":"California",
+    "employee_status":"Employee",
+    "employee_ssn":"1234",
+    "employee_id":"4",
+    "salary_status":"salary",
+    "salary_payFrequency":"Bi-Weekly",
+    "salary_annualSalary":"",
+    "salary_payDate":"12-03-2020",
+    "salary_checkNo":"4567"
+    
+}
