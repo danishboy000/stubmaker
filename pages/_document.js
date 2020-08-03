@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+        <script src="https://www.paypal.com/sdk/js?client-id=AaFwlHr6Cc2vJ1PKqMYMc4QZvtef13deQqKigVyyTcCulpNB2gppgWj1d0X3FGFxw9LsnKUrp1aN_k9a"></script>
         </Head>
         <body>
           <Main />

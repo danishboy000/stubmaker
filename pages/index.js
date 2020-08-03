@@ -25,26 +25,8 @@ export default function index() {
 
     const downloadPdf = () => {
 
-    //setCheckout(true);
-    var temp = document.getElementById('template_1');
-    temp.style.display = 'block';
-    var widthT = temp.clientWidth - 450;
-    var heightT = temp.offsetHeight - 250;
-
-    document.getElementById('waterMark').style.display = 'none';
-    html2canvas(document.querySelector('#template_1')).then(function(canvas) {
-        const imgData = canvas.toDataURL('image/png');
-        
-        var pdf = new jsPDF("l", "px",[widthT,heightT]);
-
-        var width = pdf.internal.pageSize.getWidth();
-        var height = pdf.internal.pageSize.getHeight();
-        pdf.addImage(imgData, 'png', 0, 0,width,height);
-        pdf.save("download.pdf");
-
-        document.getElementById('template_1').style.display = 'none';
-        document.getElementById('waterMark').style.display = 'block';
-    })
+    setCheckout(true);
+    
     }
 
 
@@ -67,7 +49,9 @@ export default function index() {
     return (
         <>
         <Template1 data = {data}/>
+        
         <div className="container">
+            <h1>Stubmaker</h1>
             <div className="leftCon">
                 <label>Company Name</label>
                 <input id = 'company_name' type="text" onChange = {handleInput} defaultValue = {data.company_name}/>
