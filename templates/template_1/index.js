@@ -88,7 +88,7 @@ export default function index({data}) {
             </div>
 
             <div id = 'waterMark' className="waterMark">
-                <img src="/watermark.png" alt=""/>
+                <img src="/waterMark.png" alt=""/>
             </div>
             
         </div>

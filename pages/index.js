@@ -62,6 +62,10 @@ export default function index() {
                 <div className="downloadBtn" onClick = {downloadPdf}>
                     Download pdf
                 </div>
+
+                {
+                    checkout && <PayWithPayPal /> 
+                }
             </div>
             <div className="rightCon">
                 <img id = 'previewImage' src="" alt=""/>
@@ -70,9 +74,7 @@ export default function index() {
 
         </div>
 
-        {
-            checkout && <PayWithPayPal /> 
-        }
+        
         </>
     )
 }
