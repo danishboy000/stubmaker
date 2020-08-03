@@ -40,11 +40,8 @@ export default function index() {
        
     }
 
-    if (checkout) {
-            return (
-                <PayWithPayPal />
-            )
-        }
+    
+                
 
     return (
         <>
@@ -72,6 +69,10 @@ export default function index() {
 
 
         </div>
+
+        {
+            checkout && <PayWithPayPal /> 
+        }
         </>
     )
 }
