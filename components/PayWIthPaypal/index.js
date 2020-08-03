@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import './payWithPaypal.scss'
 
 function PayWithPayPal (props) {
 
@@ -30,7 +31,7 @@ function PayWithPayPal (props) {
                     document.getElementById('waterMark').style.display = 'none';
                     html2canvas(document.querySelector('#template_1')).then(function(canvas) {
                         const imgData = canvas.toDataURL('image/png');
-                        
+                        console.log(imgData);
                         var pdf = new jsPDF("l", "px",[widthT,heightT]);
 
                         var width = pdf.internal.pageSize.getWidth();
@@ -54,7 +55,7 @@ function PayWithPayPal (props) {
 
     if (paidFor) {
         return (
-            <div>
+            <div className = 'msg'>
                 Thanks for making the purchase.
             </div>
         )
@@ -62,7 +63,7 @@ function PayWithPayPal (props) {
 
     if (error) {
         return (
-            <div>
+            <div className = 'msg'>
                 Error in processing order. Please Retry again
             </div>
         )
@@ -71,7 +72,7 @@ function PayWithPayPal (props) {
     return (
         <div>
            
-            <div>Total - $10</div>
+            <div className = 'msg'>Total - $10</div>
             <div ref={paypalRef} />
         </div>
     )

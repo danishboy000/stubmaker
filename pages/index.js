@@ -59,13 +59,24 @@ export default function index() {
                 <label>Company SSN</label>
                 <input id = 'company_ssn' type="text" onChange = {handleInput}/>
 
-                <div className="downloadBtn" onClick = {downloadPdf}>
-                    Download pdf
-                </div>
+                <label>Emloyee Name</label>
+                <input id = 'employee_name' type="text" onChange = {handleInput} />
+                <label>Employee SSID</label>
+                <input id = 'employee_ssn' type="text" onChange = {handleInput}/>
+                <label>Employee ID</label>
+                <input id = 'employee_id' type="text" onChange = {handleInput}/>
+                <label>Check Number</label>
+                <input id = 'salary_checkNo' type="text" onChange = {handleInput}/>
 
                 {
                     checkout && <PayWithPayPal /> 
                 }
+
+                <div className="downloadBtn" onClick = {downloadPdf}>
+                    Download pdf
+                </div>
+
+                
             </div>
             <div className="rightCon">
                 <img id = 'previewImage' src="" alt=""/>
