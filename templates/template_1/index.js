@@ -7,7 +7,7 @@ export default function index({data}) {
         <div id = 'template_1' className = 'template1'>
             <div className="head">
                 <div className="company">
-                    {data.company_logo && <div className="logo"><img src={data.company_logo} alt=""/></div>}
+                    {data.company_logo && <div className="logo"><img id = 'logoImg' src={data.company_logo} alt=""/></div>}
                     <div className="infoCon">
                         <div className="name">{data.company_name}</div>
                         {data.company_address && <div className="address">{data.company_address}{data.company_city && <span> , {data.company_city}</span>}</div>}

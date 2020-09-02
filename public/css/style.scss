@@ -3,7 +3,7 @@
 
 //defining fonts
 
-@font-face {
+  @font-face {
     font-family: 'montserrat';
     src: url("/fonts/Montserrat-Regular.otf");
   }
@@ -28,6 +28,37 @@
     src: url("/fonts/Montserrat-SemiBold.otf");
   }
 
+  @font-face {
+    font-family: 'opensans';
+    src: url("/fonts/OpenSans-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: 'opensans-bold';
+    src: url("/fonts/OpenSans-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: 'opensans-light';
+    src: url("/fonts/OpenSans-Light.ttf");
+  }
+
+  @font-face {
+    font-family: 'opensans-semibold';
+    src: url("/fonts/OpenSans-SemiBold.ttf");
+  }
+
+  @font-face {
+    font-family: 'opensans-italic';
+    src: url("/fonts/OpenSans-Italic.ttf");
+  }
+
+  @font-face {
+    font-family: 'opensans-extrabold';
+    src: url("/fonts/OpenSans-ExtraBold.ttf");
+  }
+
+
 
 :root{
     --blue:#0984E3;
@@ -36,7 +67,7 @@
     --turquoise:#00CEC9;
     --beige:#FFD2BB;
     --box-shadow:0 8px 10px 2px rgba(0,0,0,0.1);
-    font-family:'montserrat','sans-serif';
+    font-family:'opensans','montserrat','sans-serif';
     font-size:16px;
     line-height: 19px;
     color:#333333;
@@ -80,7 +111,11 @@ body{
   h1{
     margin:15px auto;
     width:100%;
+    font-family:'opensans-light';
+    text-align:center;
+    margin-bottom:40px;
   }
+
 
   .leftCon{
     width:50%;
@@ -88,17 +123,27 @@ body{
     overflow-y: scroll;
 
     input{
-      width:90%;
-      border:1px solid #333333;
-      padding:10px;
-      border-radius:4px;
-      margin-top:10px;
-
+      width:70%;
+      cursor:pointer;
+      font-family:opensans;
     }
+
+    .custom-file{
+      width:70%;
+    }
+
+    .custom-file-label{
+      cursor:pointer;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-family:opensans;
+    }
+
 
     label{
       font-size:15px;
-      font-family:montserrat-semibold;
+      font-family:opensans-semibold;
       margin-top:10px;
       display:block;
     }
@@ -128,9 +173,24 @@ body{
 
   .rightCon{
     width:50%;
+    position:relative;
+    overflow:hidden;
 
     img{
-      width:100%;
+      width:500px;
+      height:300px;
+      cursor:pointer;
     }
+
+    .overlay{
+      width:500px;
+      height:300px;
+      position:absolute;
+      background-color: rgba(0, 0, 0, 0.2);
+      top:0px;
+      cursor:pointer;
+      display:none;
+    }
+
   }
 }
